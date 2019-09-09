@@ -292,14 +292,6 @@ console.log(qs.stringify(a))
 
 对象内部的属性监听(深度监听)
 
-**知识2:** git
-
- 控制面板-用户账户-管理凭据-windows凭据
-
-用户名: helh22
-
-密码: 123456
-
 **知识3**:  获取tree的整条数据链
 
 ```
@@ -366,26 +358,3 @@ if (this.permissions.indexOf(`${event.target.innerText}`) > -1) {
       }
 ```
 
-**gcp-clinplus@admin.com**
-
-GCP密码:  qaz123$%^
-
-上传命令
-
-[http://192.168.123.30:8017](http://192.168.123.30:8017/)
-
-\\\192.168.123.30\web
-
-ogrId: 3041819
-
-git clone http://192.168.123.29:10101/r/System-Doc.git 问题
-
-据说我是王的女儿
-
-6212260200166766630
-
-helinhuigcp xiaopiu密码
-
-sql root密码123456
-
-gitblit密码: 123456
