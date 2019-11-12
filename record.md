@@ -20,33 +20,7 @@
 ​    在vscode菜单中，文件->首选项->设置
 找到 “vetur.validation.template”: true 将其改为false，就可关闭eslint的检查，错误消失
 
-**问题3**: 添加部门不成功
-已解决:请求参数parentid对应为parentName
 
-**问题4**:左边菜单栏,没有子级也显示下拉按钮怎么办?
-
-已解决: 没有子级的项直接用menuItem作为外部标签使用
-
-**问题5**:部门功能计划tree实现,expand不生效
-已解决: render渲染(官网)
-
-**问题6:** 禁用,启用,新增,删除(刷新问题目前手动刷新)
-
-已解决: 调用table方法传入部门id
-
-**问题7** :radio选择男女(目前没有男女数据null)
-
-已解决:  radio禁用
-
-**问题8** :其他角色的v-model和请求参数的问题
-
-已解决: 其他角色目前点击编辑的时候不会选中已有角色,需重新选择
-
-**问题9:** 登录密码错误没有提示,
-
-原因: 判断响应拦截的时候code找不到也就是说判断响应码不存在...
-
-已解决: 打印response找到code的位置
 
 **问题10**:   token超时刷新的问题
 
@@ -57,53 +31,6 @@
 1:token过期自动退出(不可行)
 
 2:[判断用户是否在活跃期(实现无缝刷新)](https://www.cnblogs.com/laozhang-is-phi/p/10462316.html#autoid-1-0-0)
-
-**问题11:** 部门取消没生效
-
-已解决:  添加取消事件
-
-```
-<Button style="margin-left: 8px" @click="editcancle()">取消</Button>
-editcancle () {
-   this.modal1 = false
-}
-```
-
-**问题12:** 禁用启用默认显示隐藏
-
-**未解决**: [如果状态是启用显示禁用按钮,如果状态是0显示启用按钮](https://www.cnblogs.com/sjie/p/9412318.html)
-
-**问题13:** 人员编辑页面F5刷新会自动退回登录页
-
-已解决-:localstorage当前编辑的用户ID
-
-**问题14:**  部门组织Id没传的时候点击保存,请求成功,但是不显示,也不报错.这样下次输入统一部门名称的时候会显示部门已存在.用户使用的时候会有问题.
-
-**未解决:** 
-
-**问题15:** 用户每次重新进入都应该返回登录页
-
-已解决: localstorage换为sessionstorage
-
-**问题16:** 稽查页面的搜索
-
-**未解决:** 
-
-
-
-
-
-**后期** ----
-
-**--问题1:**  token加密问题: 抓包工具能获取到数据
-
-**--问题2:** 当前用户点击自身禁用强制下线
-
-**--问题3:** 单点登录
-
-**--问题4:** 
-
-
 
 
 
@@ -159,7 +86,7 @@ renderContent (h, { root, node, data }) {
 
 [验证示例](https://blog.csdn.net/IT_hejinrong/article/details/79170351)
 
-**记录4:**  表单自定义验证问题
+**记录4:**  表单自定义验证问题-1.png
 
 ![](D:\Project\markdown\1.png)
 
@@ -175,35 +102,35 @@ renderContent (h, { root, node, data }) {
 
   动态传参,组件传值不可行,解决方法localstorage
 
-**记录8**: 子级默认不展开
+**记录8**: 子级默认不展开 - 2.png
 
 ![](C:\Users\admin\Desktop\markdown\2.png)
 
 ![](D:\Project\markdown\2.png)
 
-**记录9:**  人员编辑-部门下拉框
+**记录9:**  人员编辑-部门下拉框 -3.png
 
 ![](D:\Project\markdown\3.png)
 
-**记录10:** 人员基本信息,只显示不可编辑,取消保存按钮
+**记录10:** 人员基本信息,只显示不可编辑,取消保存按钮 - 4.png,5.png
 
 ![](D:\Project\markdown\4.png)
 
 ![](D:\Project\markdown\5.png)
 
-**记录11:** new Date+ 20minutes
+**记录11:** new Date+ 20minutes- 6.png
 
 ![](D:\Project\markdown\6.png)
 
-**记录12:** - token --login.vue
+**记录12:** - token --login.vue -7.png
 
 ![](D:\Project\markdown\7.png)
 
-api.js(调用,request=>http.request,routerbeforeeach)
+api.js(调用,request=>http.request,routerbeforeeach) -8.png
 
 ![](D:\Project\markdown\8.png)
 
-response=> 判断浏览器返回的状态码
+response=> 判断浏览器返回的状态码 -9.png
 
 ![](D:\Project\markdown\9.png)
 
@@ -213,25 +140,25 @@ response=> 判断浏览器返回的状态码
 
 **记录14:** [IE不支持es6语法:](https://blog.csdn.net/Calla_Lj/article/details/84402221)
 
-解决:  1:npm install --save babel-polyfill 或者 yarn add babel-polyfill
+解决:  1:npm install --save babel-polyfill 或者 yarn add babel-polyfill - 
 
-2: ![](C:\Users\admin\Desktop\markdown\10.png)
+2: ![](C:\Users\admin\Desktop\markdown\10.png)   10.png,
 
 ![](D:\Project\markdown\10.png)
 
-3: ![](C:\Users\admin\Desktop\markdown\11.png)
+3: 11.png ![](C:\Users\admin\Desktop\markdown\11.png)
 
 ![](D:\Project\markdown\11.png)
 
-**记录15:** table的render函数checkbox默认选中
+**记录15:** table的render函数checkbox默认选中  12.png
 
 ![](D:\Project\markdown\12.png)
 
-**记录16**: 下载文件
+**记录16**: 下载文件 - 13.png
 
 ![](D:\Project\markdown\13.png)
 
-**记录17**: 上传文件
+**记录17**: 上传文件 - 14.png
 
 ![](D:\Project\markdown\14.png)
 
@@ -282,6 +209,14 @@ console.log(qs.stringify(a))
 // 输出 name=hehe&age=10
 ```
 
+**记录21:** 执行npm run build 报错
+
+原因: 之前执行过npm audit fix 和 npm audit 升级了所有安装的依赖项,但是和webpack打包版本冲突
+
+解决方案: 还原以前的版本. 附上[链接](https://www.jianshu.com/p/3f8f60e01797)
+
+
+
 **知识1:** vue中的watch函数
 
 ​    [watch监测的是一个对象的话,可以借助于computed计算属性来完成](https://www.cnblogs.com/jin-zhe/p/9319648.html)
@@ -291,6 +226,8 @@ console.log(qs.stringify(a))
 数组的变化不需要深度监听
 
 对象内部的属性监听(深度监听)
+
+
 
 **知识3**:  获取tree的整条数据链
 
@@ -357,4 +294,12 @@ if (this.permissions.indexOf(`${event.target.innerText}`) > -1) {
         return this.$Message.error('抱歉,您暂无权限操作~')
       }
 ```
+
+
+
+知识5: Git基本指令 - Git.png
+
+![](D:\Project\markdown\Git.png)
+
+
 
